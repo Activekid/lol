@@ -15,9 +15,9 @@
     <div class="swiper-inner">
       <!-- swiper -->
       <swiper :options="swiperOption">
-       <swiper-slide v-for="swiper in swipers">
+       <swiper-slide v-for="swiper in swipers" style="height:200px">
           <a :href="swiper.article_url">
-            <img :src="swiper.image_url_big" alt=""/>
+            <img :src="swiper.image_url_big" style="height:200px" alt=""/>
           </a>
        </swiper-slide>
        <!-- <swiper-slide>Slide 1</swiper-slide>
@@ -66,7 +66,7 @@
       }
     },
      mounted:function(){
-        console.log("进来了");
+        //console.log("进来了");
         this.getBanner();
       }
   }
